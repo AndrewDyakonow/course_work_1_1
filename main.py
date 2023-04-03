@@ -23,7 +23,8 @@ def print_statistics(answers: list) -> None:
     print(f'Отвечено неверно: {answers.count(False)}')
 
 
-def check_answers(random_word_play, user_answer):
+def check_answers(random_word_play: str, user_answer: str) -> bool:
+    """Проверка ответа пользователя"""
     if user_answer == random_word_play:
         print('Правильно!')
         return True
